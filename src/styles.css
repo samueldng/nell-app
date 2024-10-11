@@ -1,0 +1,198 @@
+/* Welcome screen */
+
+/* Importa a fonte Inter do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
+
+/* Remove a margem padrão de todos os parágrafos */
+p {
+  margin: 0;
+}
+
+/* Estilo principal da tela de boas-vindas */
+.welcome-screen {
+  position: relative; /* Define a posição relativa para elementos absolutos dentro dela */
+  display: flex; /* Usa flexbox para o layout */
+  flex-direction: column; /* Organiza os itens na coluna */
+  justify-content: flex-start; /* Alinha os itens no início do contêiner */
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  width: 375px; /* Largura fixa da tela */
+  height: 812px; /* Altura fixa da tela */
+  box-sizing: border-box; /* Inclui padding e border nas dimensões */
+  background-color: rgba(28, 28, 35, 1); /* Cor de fundo da tela */
+}
+
+/* Estilo do botão "Eu tenho uma conta" */
+.button {
+  position: absolute; /* Posição absoluta para o botão */
+  top: 734px; /* Posição vertical */
+  left: 25px; /* Posição horizontal */
+  display: flex; /* Usando flexbox para centralizar conteúdo */
+  flex-direction: column; /* Organiza conteúdo na coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  gap: 6px; /* Espaçamento entre itens dentro do botão */
+  width: 324px; /* Largura do botão */
+  height: 48px; /* Altura do botão */
+  padding: 12px 10px; /* Espaçamento interno */
+  border: 1px solid rgba(255, 255, 255, 1); /* Borda do botão */
+  border-radius: 999px; /* Bordas arredondadas */
+  box-sizing: border-box; /* Inclui padding e border nas dimensões */
+  background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo do botão */
+}
+
+/* Estilo do texto dentro do botão "Eu tenho uma conta" */
+.ihave-an-account {
+  color: rgba(255, 255, 255, 1); /* Cor do texto */
+  font-size: 14px; /* Tamanho da fonte */
+  line-height: 143%; /* Altura da linha */
+  font-family: Inter, sans-serif; /* Fonte utilizada */
+  font-weight: 600; /* Peso da fonte */
+}
+
+/* Estilo do botão "Começar" */
+.button-1 {
+  position: absolute; /* Posição absoluta para o botão */
+  top: 670px; /* Posição vertical */
+  left: 25px; /* Posição horizontal */
+  display: flex; /* Usando flexbox para centralizar conteúdo */
+  flex-direction: column; /* Organiza conteúdo na coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  gap: 12px; /* Espaçamento entre itens dentro do botão */
+  width: 324px; /* Largura do botão */
+  height: 48px; /* Altura do botão */
+  padding: 12px 22px; /* Espaçamento interno */
+  border: 1px solid rgba(255, 255, 255, 1); /* Borda do botão */
+  border-radius: 999px; /* Bordas arredondadas */
+  box-sizing: border-box; /* Inclui padding e border nas dimensões */
+  background-color: linear-gradient( /* Fundo em gradiente */
+    0deg,
+    rgba(255, 121, 102, 1),
+    rgba(255, 121, 102, 1)
+  );
+  box-shadow: 0px 8px 25px rgba(255, 121, 102, 0.5); /* Sombra do botão */
+}
+
+/* Estilo do texto dentro do botão "Começar" */
+.get-started {
+  color: rgba(255, 255, 255, 1); /* Cor do texto */
+  font-size: 14px; /* Tamanho da fonte */
+  line-height: 143%; /* Altura da linha */
+  font-family: Inter, sans-serif; /* Fonte utilizada */
+  font-weight: 600; /* Peso da fonte */
+}
+
+/* Estilo da primeira imagem lateral */
+.image {
+  position: absolute; /* Posição absoluta para a imagem */
+  top: 120px; /* Posição vertical */
+  left: 0px; /* Posição horizontal */
+  width: 100px; /* Largura da imagem */
+  height: 240px; /* Altura da imagem */
+}
+
+/* Estilo do quadro (frame) */
+.frame {
+  position: absolute; /* Posição absoluta para o quadro */
+  top: 202.67px; /* Posição vertical */
+  left: 3px; /* Posição horizontal */
+  width: 434px; /* Largura do quadro */
+  height: 366px; /* Altura do quadro */
+  opacity: 0.3; /* Opacidade do quadro */
+}
+
+/* Estilo do texto de boas-vindas */
+.bem-vindo-aqui-sua-organ {
+  position: absolute; /* Posição absoluta para o texto */
+  top: 590px; /* Posição vertical */
+  left: 70.33px; /* Posição horizontal */
+  display: flex; /* Usando flexbox para centralizar conteúdo */
+  flex-direction: column; /* Organiza conteúdo na coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  color: rgba(255, 255, 255, 1); /* Cor do texto */
+  font-size: 14px; /* Tamanho da fonte */
+  line-height: 143%; /* Altura da linha */
+  font-family: Inter, sans-serif; /* Fonte utilizada */
+  font-weight: 400; /* Peso da fonte */
+  text-align: center; /* Alinhamento do texto */
+  letter-spacing: 0.2px; /* Espaçamento entre letras */
+}
+
+/* Estilo do segundo quadro (frame) */
+.frame-1 {
+  position: absolute; /* Posição absoluta para o quadro */
+  top: 148px; /* Posição vertical */
+  left: 43px; /* Posição horizontal */
+  width: 289px; /* Largura do quadro */
+  height: 410px; /* Altura do quadro */
+}
+
+/* Estilo da segunda imagem lateral */
+.image-1 {
+  position: absolute; /* Posição absoluta para a imagem */
+  top: 396px; /* Posição vertical */
+  left: 262.43px; /* Posição horizontal */
+  width: 112.5px; /* Largura da imagem */
+  height: 219px; /* Altura da imagem */
+}
+
+/* Estilo do logotipo da empresa */
+.assets-logo {
+  position: absolute; /* Posição absoluta para o logotipo */
+  top: 7.39%; /* Posição vertical */
+  bottom: 89.04%; /* Posição inferior */
+  left: 26.13%; /* Posição à esquerda */
+  right: 21.6%; /* Posição à direita */
+  display: flex; /* Usando flexbox para centralizar conteúdo */
+  flex-direction: row; /* Organiza conteúdo na linha */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  width: 196px; /* Largura do logotipo */
+  height: 29px; /* Altura do logotipo */
+  box-sizing: border-box; /* Inclui padding e border nas dimensões */
+}
+
+/* Estilo do segundo quadro do logotipo */
+.frame-2 {
+  width: 30.83px; /* Largura do quadro */
+  height: 100%; /* Altura do quadro */
+}
+
+/* Estilo do texto do logotipo da empresa */
+.nell-gest-o {
+  display: flex; /* Usando flexbox para centralizar conteúdo */
+  flex-direction: column; /* Organiza conteúdo na coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  color: rgba(255, 255, 255, 1); /* Cor do texto */
+  font-size: 20px; /* Tamanho da fonte */
+  line-height: 205%; /* Altura da linha */
+  font-family: Inter, sans-serif; /* Fonte utilizada */
+  font-weight: 800; /* Peso da fonte */
+  text-align: center; /* Alinhamento do texto */
+  letter-spacing: 4px; /* Espaçamento entre letras */
+}
+/* Estilo do contêiner */
+.container {
+  display: flex; /* Usa flexbox para o layout */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Define a altura do contêiner para 100% da altura da viewport */
+}
+/* Estilo do texto de boas-vindas */
+.bem-vindo-aqui-sua-organ {
+  position: absolute; /* Posição absoluta para o texto */
+  top: 590px; /* Posição vertical */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta a posição para centralizar corretamente */
+  display: flex; /* Usando flexbox para centralizar conteúdo */
+  flex-direction: column; /* Organiza conteúdo na coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  color: rgba(255, 255, 255, 1); /* Cor do texto */
+  font-size: 14px; /* Tamanho da fonte */
+  line-height: 143%; /* Altura da linha */
+  font-family: Inter, sans-serif; /* Fonte utilizada */
+  font-weight: 400; /* Peso da fonte */
+  text-align: center; /* Alinhamento do texto */
+  letter-spacing: 0.2px; /* Espaçamento entre letras */
+  width: 100%; /* Define a largura para centralizar o texto */
+}
