@@ -1,13 +1,19 @@
 /* Welcome screen */
 
+<<<<<<< HEAD
 /* Importa a fonte Inter do Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
 
 /* Remove a margem padrão de todos os parágrafos */
+=======
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
+
+>>>>>>> ad0d9c86f1fc5de201af3e2fe753ca3285f92043
 p {
   margin: 0;
 }
 
+<<<<<<< HEAD
 /* Estilo principal da tela de boas-vindas */
 .welcome-screen {
   position: relative; /* Define a posição relativa para elementos absolutos dentro dela */
@@ -66,10 +72,65 @@ p {
   border-radius: 999px; /* Bordas arredondadas */
   box-sizing: border-box; /* Inclui padding e border nas dimensões */
   background-color: linear-gradient( /* Fundo em gradiente */
+=======
+.welcome-screen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 375px;
+  height: 812px;
+  box-sizing: border-box;
+  background-color: rgba(28, 28, 35, 1);
+}
+.button {
+  position: absolute;
+  top: 734px;
+  left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  width: 324px;
+  height: 48px;
+  padding: 12px 10px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 999px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.ihave-an-account {
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  line-height: 143%;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+}
+
+.button-1 {
+  position: absolute;
+  top: 670px;
+  left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 324px;
+  height: 48px;
+  padding: 12px 22px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 999px;
+  box-sizing: border-box;
+  background-color: linear-gradient(
+>>>>>>> ad0d9c86f1fc5de201af3e2fe753ca3285f92043
     0deg,
     rgba(255, 121, 102, 1),
     rgba(255, 121, 102, 1)
   );
+<<<<<<< HEAD
   box-shadow: 0px 8px 25px rgba(255, 121, 102, 0.5); /* Sombra do botão */
 }
 
@@ -195,4 +256,95 @@ p {
   text-align: center; /* Alinhamento do texto */
   letter-spacing: 0.2px; /* Espaçamento entre letras */
   width: 100%; /* Define a largura para centralizar o texto */
+=======
+  box-shadow: 0px 8px 25px rgba(255, 121, 102, 0.5);
+}
+.get-started {
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  line-height: 143%;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+}
+
+.image {
+  position: absolute;
+  top: 120px;
+  left: -229px;
+  width: 288px;
+  height: 219px;
+}
+
+.frame {
+  position: absolute;
+  top: 202.67px;
+  left: 3px;
+  width: 434px;
+  height: 366px;
+  opacity: 0.3;
+}
+
+.bem-vindo-aqui-sua-organ {
+  position: absolute;
+  top: 590px;
+  left: 70.33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  line-height: 143%;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+.frame-1 {
+  position: absolute;
+  top: 148px;
+  left: 43px;
+  width: 289px;
+  height: 410px;
+}
+
+.image-1 {
+  position: absolute;
+  top: 396px;
+  left: 262.43px;
+  width: 288px;
+  height: 219px;
+}
+
+.assets-logo {
+  position: absolute;
+  top: 7.39%;
+  bottom: 89.04%;
+  left: 26.13%;
+  right: 21.6%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 196px;
+  height: 29px;
+  box-sizing: border-box;
+}
+.frame-2 {
+  width: 30.83px;
+  height: 100%;
+}
+
+.nell-gest-o {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+  line-height: 205%;
+  font-family: Inter, sans-serif;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 4px;
+>>>>>>> ad0d9c86f1fc5de201af3e2fe753ca3285f92043
 }
