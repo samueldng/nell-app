@@ -1,175 +1,95 @@
 /* Welcome screen */
 
-<<<<<<< HEAD
 /* Importa a fonte Inter do Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Remove a margem padrão de todos os parágrafos */
-=======
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
-
->>>>>>> ad0d9c86f1fc5de201af3e2fe753ca3285f92043
 p {
   margin: 0;
 }
 
-<<<<<<< HEAD
 /* Estilo principal da tela de boas-vindas */
-.welcome-screen {
-  position: relative; /* Define a posição relativa para elementos absolutos dentro dela */
-  display: flex; /* Usa flexbox para o layout */
-  flex-direction: column; /* Organiza os itens na coluna */
-  justify-content: flex-start; /* Alinha os itens no início do contêiner */
-  align-items: flex-start; /* Alinha os itens à esquerda */
-  width: 375px; /* Largura fixa da tela */
-  height: 812px; /* Altura fixa da tela */
-  box-sizing: border-box; /* Inclui padding e border nas dimensões */
-  background-color: rgba(28, 28, 35, 1); /* Cor de fundo da tela */
-}
-
-/* Estilo do botão "Eu tenho uma conta" */
-.button {
-  position: absolute; /* Posição absoluta para o botão */
-  top: 734px; /* Posição vertical */
-  left: 25px; /* Posição horizontal */
-  display: flex; /* Usando flexbox para centralizar conteúdo */
-  flex-direction: column; /* Organiza conteúdo na coluna */
-  justify-content: center; /* Centraliza verticalmente */
-  align-items: center; /* Centraliza horizontalmente */
-  gap: 6px; /* Espaçamento entre itens dentro do botão */
-  width: 324px; /* Largura do botão */
-  height: 48px; /* Altura do botão */
-  padding: 12px 10px; /* Espaçamento interno */
-  border: 1px solid rgba(255, 255, 255, 1); /* Borda do botão */
-  border-radius: 999px; /* Bordas arredondadas */
-  box-sizing: border-box; /* Inclui padding e border nas dimensões */
-  background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo do botão */
-}
-
-/* Estilo do texto dentro do botão "Eu tenho uma conta" */
-.ihave-an-account {
-  color: rgba(255, 255, 255, 1); /* Cor do texto */
-  font-size: 14px; /* Tamanho da fonte */
-  line-height: 143%; /* Altura da linha */
-  font-family: Inter, sans-serif; /* Fonte utilizada */
-  font-weight: 600; /* Peso da fonte */
-}
-
-/* Estilo do botão "Começar" */
-.button-1 {
-  position: absolute; /* Posição absoluta para o botão */
-  top: 670px; /* Posição vertical */
-  left: 25px; /* Posição horizontal */
-  display: flex; /* Usando flexbox para centralizar conteúdo */
-  flex-direction: column; /* Organiza conteúdo na coluna */
-  justify-content: center; /* Centraliza verticalmente */
-  align-items: center; /* Centraliza horizontalmente */
-  gap: 12px; /* Espaçamento entre itens dentro do botão */
-  width: 324px; /* Largura do botão */
-  height: 48px; /* Altura do botão */
-  padding: 12px 22px; /* Espaçamento interno */
-  border: 1px solid rgba(255, 255, 255, 1); /* Borda do botão */
-  border-radius: 999px; /* Bordas arredondadas */
-  box-sizing: border-box; /* Inclui padding e border nas dimensões */
-  background-color: linear-gradient( /* Fundo em gradiente */
-=======
 .welcome-screen {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 375px;
-  height: 812px;
+  justify-content: space-between; /* Alinhamento para distribuir espaço */
+  align-items: center; /* Centraliza os itens */
+  width: 100%; /* Largura responsiva */
+  height: 100vh; /* Altura ocupando toda a tela */
   box-sizing: border-box;
-  background-color: rgba(28, 28, 35, 1);
+  background-color: rgba(28, 28, 35, 1); /* Mantém fundo escuro */
+  overflow: hidden; /* Impede rolagem */
 }
+
+/* Estilo do contêiner de conteúdo */
+.content {
+  flex: 1; /* Permite que o contêiner de conteúdo ocupe o espaço restante */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Estilo dos botões */
+/* Estilo dos botões */
+.button, .button-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 324px; /* Largura fixada para os botões */
+  height: 40px; /* Altura dos botões reduzida */
+  margin-top: 12px; /* Espaço entre os botões */
+  margin-bottom: 20px; /* Aumentar o espaço abaixo dos botões */
+  padding: 12px 10px; /* Ajuste do padding */
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 999px;
+}
+
 .button {
-  position: absolute;
-  top: 734px;
-  left: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
-  width: 324px;
-  height: 48px;
-  padding: 12px 10px;
-  border: 1px solid rgba(255, 255, 255, 1);
-  border-radius: 999px;
-  box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-.ihave-an-account {
-  color: rgba(255, 255, 255, 1);
-  font-size: 14px;
-  line-height: 143%;
-  font-family: Inter, sans-serif;
-  font-weight: 600;
-}
-
-.button-1 {
-  position: absolute;
-  top: 670px;
-  left: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  width: 324px;
-  height: 48px;
-  padding: 12px 22px;
-  border: 1px solid rgba(255, 255, 255, 1);
-  border-radius: 999px;
-  box-sizing: border-box;
-  background-color: linear-gradient(
->>>>>>> ad0d9c86f1fc5de201af3e2fe753ca3285f92043
-    0deg,
-    rgba(255, 121, 102, 1),
-    rgba(255, 121, 102, 1)
-  );
-<<<<<<< HEAD
-  box-shadow: 0px 8px 25px rgba(255, 121, 102, 0.5); /* Sombra do botão */
-}
-
-/* Estilo do texto dentro do botão "Começar" */
-.get-started {
-  color: rgba(255, 255, 255, 1); /* Cor do texto */
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo do botão "Eu tenho uma conta" */
+  color: rgba(255, 255, 255, 1); /* Cor do texto branca */
   font-size: 14px; /* Tamanho da fonte */
-  line-height: 143%; /* Altura da linha */
-  font-family: Inter, sans-serif; /* Fonte utilizada */
   font-weight: 600; /* Peso da fonte */
 }
 
+.button-1 {
+  background: linear-gradient(0deg, rgba(255, 121, 102, 1), rgba(255, 121, 102, 1)); /* Fundo do botão "Começar" */
+  box-shadow: 0px 8px 25px rgba(255, 121, 102, 0.5);
+  color: rgba(255, 255, 255, 1); /* Cor do texto branca */
+  font-size: 14px; /* Tamanho da fonte */
+  font-weight: 600; /* Peso da fonte */
+}
+
+
 /* Estilo da primeira imagem lateral */
 .image {
-  position: absolute; /* Posição absoluta para a imagem */
-  top: 120px; /* Posição vertical */
-  left: 0px; /* Posição horizontal */
-  width: 100px; /* Largura da imagem */
-  height: 240px; /* Altura da imagem */
+  position: absolute;
+  top: 10%; /* Ajuste em porcentagem */
+  left: 5%; /* Ajuste em porcentagem */
+  width: 70px; /* Largura da imagem */
+  height: 219px; /* Altura da imagem */
 }
 
 /* Estilo do quadro (frame) */
 .frame {
-  position: absolute; /* Posição absoluta para o quadro */
-  top: 202.67px; /* Posição vertical */
-  left: 3px; /* Posição horizontal */
-  width: 434px; /* Largura do quadro */
-  height: 366px; /* Altura do quadro */
+  position: absolute;
+  top: 25%; /* Ajuste em porcentagem */
+  left: 5%; /* Ajuste em porcentagem */
+  width: 90%; /* Largura responsiva */
+  height: 40%; /* Altura fixa */
   opacity: 0.3; /* Opacidade do quadro */
 }
 
 /* Estilo do texto de boas-vindas */
 .bem-vindo-aqui-sua-organ {
-  position: absolute; /* Posição absoluta para o texto */
-  top: 590px; /* Posição vertical */
-  left: 70.33px; /* Posição horizontal */
-  display: flex; /* Usando flexbox para centralizar conteúdo */
-  flex-direction: column; /* Organiza conteúdo na coluna */
-  justify-content: center; /* Centraliza verticalmente */
+  position: absolute;
+  top: 65%; /* Eleva a frase um pouco mais */
+  left: 50%; /* Centraliza */
+  transform: translateX(-50%); /* Ajusta para o centro */
   color: rgba(255, 255, 255, 1); /* Cor do texto */
   font-size: 14px; /* Tamanho da fonte */
   line-height: 143%; /* Altura da linha */
@@ -179,166 +99,34 @@ p {
   letter-spacing: 0.2px; /* Espaçamento entre letras */
 }
 
-/* Estilo do segundo quadro (frame) */
-.frame-1 {
-  position: absolute; /* Posição absoluta para o quadro */
-  top: 148px; /* Posição vertical */
-  left: 43px; /* Posição horizontal */
-  width: 289px; /* Largura do quadro */
-  height: 410px; /* Altura do quadro */
-}
 
 /* Estilo da segunda imagem lateral */
 .image-1 {
-  position: absolute; /* Posição absoluta para a imagem */
-  top: 396px; /* Posição vertical */
-  left: 262.43px; /* Posição horizontal */
-  width: 112.5px; /* Largura da imagem */
+  position: absolute;
+  top: 60%; /* Ajuste em porcentagem */
+  left: 70%; /* Ajuste em porcentagem */
+  width: 150px; /* Largura da imagem */
   height: 219px; /* Altura da imagem */
 }
 
 /* Estilo do logotipo da empresa */
 .assets-logo {
-  position: absolute; /* Posição absoluta para o logotipo */
-  top: 7.39%; /* Posição vertical */
-  bottom: 89.04%; /* Posição inferior */
-  left: 26.13%; /* Posição à esquerda */
-  right: 21.6%; /* Posição à direita */
-  display: flex; /* Usando flexbox para centralizar conteúdo */
-  flex-direction: row; /* Organiza conteúdo na linha */
+  position: absolute; /* Manter a posição absoluta */
+  top: 5%; /* A posição vertical do logo */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajuste para centralizar corretamente */
+  display: flex; /* Usando flexbox */
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center; /* Centraliza verticalmente */
-  width: 196px; /* Largura do logotipo */
+  width: auto; /* Largura automática para que se ajuste ao conteúdo */
   height: 29px; /* Altura do logotipo */
-  box-sizing: border-box; /* Inclui padding e border nas dimensões */
-}
-
-/* Estilo do segundo quadro do logotipo */
-.frame-2 {
-  width: 30.83px; /* Largura do quadro */
-  height: 100%; /* Altura do quadro */
 }
 
 /* Estilo do texto do logotipo da empresa */
 .nell-gest-o {
-  display: flex; /* Usando flexbox para centralizar conteúdo */
-  flex-direction: column; /* Organiza conteúdo na coluna */
-  justify-content: center; /* Centraliza verticalmente */
-  color: rgba(255, 255, 255, 1); /* Cor do texto */
-  font-size: 20px; /* Tamanho da fonte */
-  line-height: 205%; /* Altura da linha */
-  font-family: Inter, sans-serif; /* Fonte utilizada */
-  font-weight: 800; /* Peso da fonte */
-  text-align: center; /* Alinhamento do texto */
-  letter-spacing: 4px; /* Espaçamento entre letras */
-}
-/* Estilo do contêiner */
-.container {
-  display: flex; /* Usa flexbox para o layout */
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  height: 100vh; /* Define a altura do contêiner para 100% da altura da viewport */
-}
-/* Estilo do texto de boas-vindas */
-.bem-vindo-aqui-sua-organ {
-  position: absolute; /* Posição absoluta para o texto */
-  top: 590px; /* Posição vertical */
-  left: 50%; /* Centraliza horizontalmente */
-  transform: translateX(-50%); /* Ajusta a posição para centralizar corretamente */
-  display: flex; /* Usando flexbox para centralizar conteúdo */
-  flex-direction: column; /* Organiza conteúdo na coluna */
-  justify-content: center; /* Centraliza verticalmente */
-  color: rgba(255, 255, 255, 1); /* Cor do texto */
-  font-size: 14px; /* Tamanho da fonte */
-  line-height: 143%; /* Altura da linha */
-  font-family: Inter, sans-serif; /* Fonte utilizada */
-  font-weight: 400; /* Peso da fonte */
-  text-align: center; /* Alinhamento do texto */
-  letter-spacing: 0.2px; /* Espaçamento entre letras */
-  width: 100%; /* Define a largura para centralizar o texto */
-=======
-  box-shadow: 0px 8px 25px rgba(255, 121, 102, 0.5);
-}
-.get-started {
-  color: rgba(255, 255, 255, 1);
-  font-size: 14px;
-  line-height: 143%;
-  font-family: Inter, sans-serif;
-  font-weight: 600;
-}
-
-.image {
-  position: absolute;
-  top: 120px;
-  left: -229px;
-  width: 288px;
-  height: 219px;
-}
-
-.frame {
-  position: absolute;
-  top: 202.67px;
-  left: 3px;
-  width: 434px;
-  height: 366px;
-  opacity: 0.3;
-}
-
-.bem-vindo-aqui-sua-organ {
-  position: absolute;
-  top: 590px;
-  left: 70.33px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: rgba(255, 255, 255, 1);
-  font-size: 14px;
-  line-height: 143%;
-  font-family: Inter, sans-serif;
-  font-weight: 400;
-  text-align: center;
-  letter-spacing: 0.2px;
-}
-
-.frame-1 {
-  position: absolute;
-  top: 148px;
-  left: 43px;
-  width: 289px;
-  height: 410px;
-}
-
-.image-1 {
-  position: absolute;
-  top: 396px;
-  left: 262.43px;
-  width: 288px;
-  height: 219px;
-}
-
-.assets-logo {
-  position: absolute;
-  top: 7.39%;
-  bottom: 89.04%;
-  left: 26.13%;
-  right: 21.6%;
-  display: flex;
-  flex-direction: row;
+  display: flex; /* Use flex para garantir centralização */
   justify-content: center;
   align-items: center;
-  width: 196px;
-  height: 29px;
-  box-sizing: border-box;
-}
-.frame-2 {
-  width: 30.83px;
-  height: 100%;
-}
-
-.nell-gest-o {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   color: rgba(255, 255, 255, 1);
   font-size: 20px;
   line-height: 205%;
@@ -346,5 +134,21 @@ p {
   font-weight: 800;
   text-align: center;
   letter-spacing: 4px;
->>>>>>> ad0d9c86f1fc5de201af3e2fe753ca3285f92043
+  white-space: nowrap; /* Impede quebra de linha */
+  margin-left: 10px; /* Espaçamento à esquerda da logo */
+}
+
+/* Responsividade */
+@media (max-width: 375px) {
+  .welcome-screen {
+    height: auto; /* Permite altura dinâmica */
+  }
+
+  .image {
+    left: 0; /* Ajuste para centralizar */
+  }
+
+  .image-1 {
+    left: 80%; /* Ajuste para a direita */
+  }
 }
