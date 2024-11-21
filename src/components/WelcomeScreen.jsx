@@ -1,13 +1,18 @@
 import React from "react";
-import "./styles.css";
+import { useNavigate } from "react-router-dom"; // Para navegação
+import "../styles.css";  // Ajustando o caminho para fora da pasta "components"
 
 export default function WelcomeScreen() {
+  const navigate = useNavigate(); // Hook para navegação
+
   const handleStartClick = () => {
-    console.log("Começar clicado!");
+    // Redireciona para a página de registro
+    navigate("/register");
   };
 
   const handleAccountClick = () => {
-    console.log("Eu tenho uma conta clicado!");
+    // Redireciona para a página de login
+    navigate("/login"); // Alterando para redirecionamento ao login
   };
 
   return (
@@ -23,9 +28,9 @@ export default function WelcomeScreen() {
           alt="Quadro decorativo"
           className="frame w-[90%] opacity-30"
         />
-       <p className="bem-vindo-aqui-sua-organ text-white text-sm text-center">
-  Bem-vindo! Aqui, sua organização<br />encontra<br />eficiência e simplicidade.
-</p>
+        <p className="bem-vindo-aqui-sua-organ text-white text-sm text-center">
+          Bem-vindo! Aqui, sua organização encontra eficiência e simplicidade.
+        </p>
 
         <img
           src="https://firebasestorage.googleapis.com/v0/b/unify-v3-copy.appspot.com/o/bj6htd5qqps-41%3A2405?alt=media&token=1fe12aa7-f133-4db0-abd9-5a8f61a17785"
@@ -40,26 +45,22 @@ export default function WelcomeScreen() {
       </div>
 
       <div className="flex flex-col items-center mb-4 space-y-4">
-        <div
+        <button
           className="button flex justify-center items-center gap-1.5 w-[324px] h-[48px] p-3 border border-white rounded-full bg-white/10"
-          onClick={handleAccountClick}
-          role="button"
-          tabIndex={0}
+          onClick={handleAccountClick} // Navegação ao clicar
         >
           <p className="ihave-an-account text-white text-sm font-semibold">
             Eu tenho uma conta
           </p>
-        </div>
-        <div
+        </button>
+        <button
           className="button-1 flex justify-center items-center gap-1.5 w-[324px] h-[48px] p-3 border border-white rounded-full bg-gradient-to-t from-red-500 to-red-500 shadow-lg"
-          onClick={handleStartClick}
-          role="button"
-          tabIndex={0}
+          onClick={handleStartClick} // Navegação ao clicar
         >
           <p className="get-started text-white text-sm font-semibold">
             Começar
           </p>
-        </div>
+        </button>
       </div>
 
       <div className="assets-logo flex justify-center items-center mb-4">
